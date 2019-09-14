@@ -9,7 +9,7 @@ class IndexApp extends StatelessWidget{
         appBar: AppBar(
           title: Text('找对app首页'),
         ),
-        body:Center(child: Text('首页，下面我们去开发导航页面'),),
+        body:Center(child: Text('首页，下面我们去开发导航页面121212'),),
       ),
     );
   }
