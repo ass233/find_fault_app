@@ -1,16 +1,16 @@
 import 'package:flutter/material.dart';
+import './pages/NavWidget/Bottom_nav_widget/Bottom_nav_widget.dart';
 
 void main()=>runApp(IndexApp());
 class IndexApp extends StatelessWidget{
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(title: '找对app',
-      home: Scaffold(
-        appBar: AppBar(
-          title: Text('找对app首页'),
+      return MaterialApp(
+        title: 'app',
+        theme: ThemeData(
+          primarySwatch: Colors.purple
         ),
-        body:Center(child: Text('首页，下面我们去开发导航页面'),),
-      ),
-    );
+        home: BottomNavigationWidget(),
+      );
   }
 }
