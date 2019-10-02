@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import './home_pages/index.dart';
+
 
 class HomeScreen extends StatefulWidget {
   @override
@@ -9,8 +11,7 @@ class _HomeScreenState extends State<HomeScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text('Home')),
-      body: Center(child: Text('Home'),),
+      body: HomeTopbar(),
     );
   }
 }

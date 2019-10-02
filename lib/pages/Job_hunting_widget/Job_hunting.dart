@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import './Job_works/index.dart';
 
 
 class JobHunting extends StatefulWidget {
@@ -9,9 +10,8 @@ class JobHunting extends StatefulWidget {
 class _JobHuntingState extends State<JobHunting> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(title: Text('求职'),),
-      body:Center(child: Text('希望你找到满意的工作'),)
+    return Container(
+      child:JobTopbar(),
     );
   }
 }

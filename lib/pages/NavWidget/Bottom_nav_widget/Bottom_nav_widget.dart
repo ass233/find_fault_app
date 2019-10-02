@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import '../../home_widget/home_screen.dart';
 import '../../Job_hunting_widget/Job_hunting.dart';
 import '../../show_technology_widget/Show_technology.dart';
-import '../../Idea_widget/idea_widget.dart';
+// import '../../Idea_widget/idea_widget.dart';
 import '../../personal_center_widget/Personal_center.dart';
 
 
@@ -11,8 +11,9 @@ class BottomNavigationWidget extends StatefulWidget {
 }
 
 class _BottomNavigationWidgetState extends State<BottomNavigationWidget> {
-  final _BottomNavigationWidgetColor = Colors.purple;
+  final _BottomNavigationWidgetColor = Colors.orange[300];
   final _biggerFont = const TextStyle(fontSize:8);
+  final _BottomFontColor = Colors.black87;
 
   int _currentIndex = 0;
   List<Widget> navList = List();
@@ -23,7 +24,6 @@ class _BottomNavigationWidgetState extends State<BottomNavigationWidget> {
       ..add(HomeScreen())
       ..add(JobHunting())
       ..add(ShowTechnology())
-      ..add(Idea())
       ..add(PersonCenter());
     super.initState();
   }
@@ -33,6 +33,7 @@ class _BottomNavigationWidgetState extends State<BottomNavigationWidget> {
     return Scaffold(
       body: navList[_currentIndex],
       bottomNavigationBar:BottomNavigationBar(
+        type: BottomNavigationBarType.fixed,
       items: [
         BottomNavigationBarItem(
           icon: Icon(
@@ -41,7 +42,7 @@ class _BottomNavigationWidgetState extends State<BottomNavigationWidget> {
           ),
           title:Text(
             '首页',
-            style: TextStyle(color:_BottomNavigationWidgetColor),
+            style: TextStyle(color:_BottomFontColor),
             
           )
         ),
@@ -52,7 +53,7 @@ class _BottomNavigationWidgetState extends State<BottomNavigationWidget> {
           ),
           title:Text(
             '求职',
-            style: TextStyle(color:_BottomNavigationWidgetColor),
+            style: TextStyle(color:_BottomFontColor),
           )
         ),
         BottomNavigationBarItem(
@@ -62,17 +63,7 @@ class _BottomNavigationWidgetState extends State<BottomNavigationWidget> {
           ),
           title:Text(
             'Show',
-            style: TextStyle(color:_BottomNavigationWidgetColor),
-          )
-        ),
-        BottomNavigationBarItem(
-          icon: Icon(
-            Icons.all_out,
-            color: _BottomNavigationWidgetColor,
-          ),
-          title:Text(
-            'Idea',
-            style: TextStyle(color:_BottomNavigationWidgetColor),
+            style: TextStyle(color:_BottomFontColor),
           )
         ),
         BottomNavigationBarItem(
@@ -82,7 +73,7 @@ class _BottomNavigationWidgetState extends State<BottomNavigationWidget> {
           ),
           title:Text(
             '我的',
-            style: TextStyle(color:_BottomNavigationWidgetColor),
+            style: TextStyle(color:_BottomFontColor),
           )
         ),
       ],
