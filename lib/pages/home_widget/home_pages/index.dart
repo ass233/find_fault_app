@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'dart:ui';
+
 
 class HomeTopbar extends StatefulWidget {
   @override
@@ -9,7 +9,7 @@ class HomeTopbar extends StatefulWidget {
 class _HomeTopbarState extends State<HomeTopbar> with SingleTickerProviderStateMixin {
 
   TabController _tabController;
-  List tabs = ['动态','关注','好友','兴趣组'];
+  List tabs = ['动态','关注','好友','群组','兴趣组'];
   @override
 
   void initState(){
@@ -31,7 +31,7 @@ class _HomeTopbarState extends State<HomeTopbar> with SingleTickerProviderStateM
         children: tabs.map((e){
           return Container(
             alignment:Alignment.center,
-            child:Text(e,textScaleFactor:5),
+            child:Text(e,textScaleFactor:2),
           );
         }).toList(),
       ),
