@@ -8,8 +8,8 @@
          FlutterApplication and put your custom class here. -->
     <application
         android:name="io.flutter.app.FlutterApplication"
-        android:label="找对app"
-        android:icon="@mipmap/zd_logo_02">
+        android:label="找对"
+        android:icon="@mipmap/zd_logo">
         <activity
             android:name=".MainActivity"
             android:launchMode="singleTop"

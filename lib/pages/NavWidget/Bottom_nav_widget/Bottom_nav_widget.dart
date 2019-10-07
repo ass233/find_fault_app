@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import '../../home_widget/home_screen.dart';
 import '../../Job_hunting_widget/Job_hunting.dart';
 import '../../show_technology_widget/Show_technology.dart';
-// import '../../Idea_widget/idea_widget.dart';
+import '../../Idea_widget/idea_widget.dart';
 import '../../personal_center_widget/Personal_center.dart';
 
 
@@ -11,7 +11,7 @@ class BottomNavigationWidget extends StatefulWidget {
 }
 
 class _BottomNavigationWidgetState extends State<BottomNavigationWidget> {
-  final _BottomNavigationWidgetColor = Colors.orange[300];
+  final _BottomNavigationWidgetColor = Colors.amber[300];
   final _biggerFont = const TextStyle(fontSize:8);
   final _BottomFontColor = Colors.black87;
 
@@ -23,6 +23,7 @@ class _BottomNavigationWidgetState extends State<BottomNavigationWidget> {
     navList
       ..add(HomeScreen())
       ..add(JobHunting())
+      ..add(Idea())
       ..add(ShowTechnology())
       ..add(PersonCenter());
     super.initState();
@@ -49,6 +50,14 @@ class _BottomNavigationWidgetState extends State<BottomNavigationWidget> {
           ),
           title:Text(
             '求职',
+          )
+        ),
+        BottomNavigationBarItem(
+          icon: Icon(
+            Icons.work,
+          ),
+          title:Text(
+            '面试',
           )
         ),
         BottomNavigationBarItem(

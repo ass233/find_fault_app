@@ -8,7 +8,7 @@ class IndexApp extends StatelessWidget{
       return MaterialApp(
         title: 'app',
         theme: new ThemeData(
-          primaryColor: Colors.orange[300],
+          primaryColor: Colors.amber[400],
         ),
         home: BottomNavigationWidget(),
       );
