@@ -10,7 +10,7 @@ class IndexApp extends StatelessWidget{
         theme: new ThemeData(
           primaryColor: Colors.amber[400],
         ),
-
+        home: BottomNavigationWidget(),
       );
   }
 }
